@@ -1,6 +1,8 @@
 package net.netconomy.phonegap;
 
 import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.CordovaInterface;
+import org.apache.cordova.CordovaWebView;
 import net.hockeyapp.android.CrashManager;
 import net.hockeyapp.android.UpdateManager;
 
@@ -10,7 +12,6 @@ public class HockeyappPlugin extends CordovaPlugin {
     @Override
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         super.initialize(cordova, webView);
-        Logger.info("Initializing HockeyappPlugin");
         checkForUpdates();
     }
 
