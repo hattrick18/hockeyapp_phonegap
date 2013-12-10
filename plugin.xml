@@ -26,6 +26,7 @@
             <activity android:name="net.hockeyapp.android.UpdateActivity" />
         </config-file>
 
+        <source-file src="src/android/HockeyappPlugin.java" target-dir="src/net/netconomy/phonegap" />
         <source-file src="src/android/HockeySDK-3.0.1.jar" target-dir="libs/" />
     </platform>
     
