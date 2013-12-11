@@ -17,6 +17,13 @@
     <!-- android -->
     <platform name="android">
 
+        <config-file target="res/xml/config.xml" parent="/widget">
+            <feature name="PushNotificationPlugin">
+                <param name="android-package" value="net.netconomy.phonegap.HockeyappPlugin"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.INTERNET" />
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
